@@ -1,0 +1,93 @@
+:root {
+  font-size: 1.125rem;
+}
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 900px) {
+  :root {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    font-size: 2rem;
+  }
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: rgb(0, 0, 0);
+}
+.messages {
+  overflow: auto;
+  width: 100vw;
+  max-height: 100vh;
+  padding: 1rem 0.9rem;
+}
+.bubble {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 0 0.125rem 0;
+  padding: 0.5rem 0.85rem;
+  line-height: 1.25rem;
+  border-radius: 1.25rem;
+  transform-origin: 0 100%;
+  vertical-align: middle;
+  transition: border-radius 0.25s ease-out 0.075s;
+}
+.bubble.left.cornered {
+  border-bottom-left-radius: 0;
+}
+.bubble.left {
+  background: #262628;
+}
+.bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-image: url(../img/corner.svg);
+  background-size: 0.5rem 0.5rem;
+  background-position: 0.5rem 0;
+  background-repeat: no-repeat;
+  transition: background-position 0.15s ease-in;
+}
+.bubble.cornered:after {
+  background-position: 0 0;
+}
+.bubble span {
+  display: block;
+}
+.bubble span.message {
+  opacity: 0;
+  color: #ffffff;
+}
+.bubble a {
+  color: #1b80ea;
+}
+.bubble .loading {
+  position: absolute;
+  width: 2.25rem;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+.bubble .loading b {
+  display: inline-block;
+  color: #888889;
+}
