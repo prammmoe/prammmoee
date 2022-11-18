@@ -16,8 +16,8 @@ window.onload = function () {
     var minutes = date.getMinutes();
     var current = hours + minutes * 0.01;
     if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 22) return 'Have a nice evening';
-    if (current >= 22 || current < 5) return 'Have a good night';
+    if (current >= 19 && current < 21) return 'Have a nice evening';
+    if (current >= 21 || current < 5) return 'Have a good night';
   };
 
   var messages = [
@@ -28,7 +28,7 @@ window.onload = function () {
     'If you have something to discuss, <br>You can contact me at <a href="mailto:ikhwanpramuditha05@gmail.com">ikhwanpramuditha05@gmail.com</a>',
     '<a target="_blank" href="https://www.linkedin.com/in/ikhwanpramuditha/">linkedin.com/in/ikhwanpramuditha</a><br><a target="_blank" href="https://twitter.com/ikhwnpramuditha">twitter.com/ikhwnpramuditha</a><br><a target="_blank" href="https://github.com/prammmoe">github.com/prammmoe</a>',
     getCurrentTime(),
-    '^^ P.',
+    '^^',
   ];
 
   var getFontSize = function () {
