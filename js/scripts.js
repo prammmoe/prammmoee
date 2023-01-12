@@ -15,20 +15,32 @@ window.onload = function () {
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var current = hours + minutes * 0.01;
-    if (current >= 5 && current < 19) return 'Have a nice day';
-    if (current >= 19 && current < 21) return 'Have a nice evening';
-    if (current >= 21 || current < 5) return 'Have a good night';
+    if (current >= 5 && current < 18) return 'Have a nice day';
+    if (current >= 18 && current < 20) return 'Have a nice evening';
+    if (current >= 20 || current < 5) return 'Have a good night';
   };
 
+  var getCurrentSit = function() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var current = hours + minutes * 0.011;
+    if (current >= 5 && current < 12) return 'Good morning';
+    if (current >= 12 && current < 17) return 'Good afternoon';
+    if (current >= 17 && current < 21) return 'Good evening';
+    if (current >= 21 && current < 5) return 'Good night'
+  }
+
   var messages = [
-    'Hello! 👋',
+    // 'Hello! 👋',
+    getCurrentSit(),
     "I'm Ikhwan",
-    'I am an IT student and currently on 3rd semester',
+    'I am a second year CS student',
     'I love designing UI',
-    'If you have something to discuss, <br>You can contact me at <a href="mailto:ikhwanpramuditha05@gmail.com">ikhwanpramuditha05@gmail.com</a>',
-    '<a target="_blank" href="https://www.linkedin.com/in/ikhwanpramuditha/">linkedin.com/in/ikhwanpramuditha</a><br><a target="_blank" href="https://twitter.com/ikhwnpramuditha">twitter.com/ikhwnpramuditha</a><br><a target="_blank" href="https://github.com/prammmoe">github.com/prammmoe</a>',
+    'If you have something to discuss, <br>you can contact me at <a href="mailto:ikhwanpramuditha05@gmail.com">ikhwanpramuditha05@gmail.com</a>',
+    '<a target="_blank" href="https://www.linkedin.com/in/ikhwanpramuditha/">linkedin.com/in/ikhwanpramuditha</a><br><a target="_blank" href="https://twitter.com/ikhwnpramuditha">twitter.com/ikhwnpramuditha</a><br><a target="_blank" href="https://github.com/prammmoe">github.com/prammmoe</a><br><a target="_blank" href="https://dribbble.com/prammmoe">dribbble.com/prammmoe</a>',
     getCurrentTime(),
-    '^^',
+    '👾',
   ];
 
   var getFontSize = function () {

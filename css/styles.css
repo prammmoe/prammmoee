@@ -30,7 +30,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0); ini warna untuk dark mode*/
+  background: #FFF
 }
 .messages {
   overflow: auto;
@@ -53,7 +54,8 @@ body {
   border-bottom-left-radius: 0;
 }
 .bubble.left {
-  background: #262628;
+  /* background: #262628; ini warna untuk dark mode*/
+  background: rgba(206, 206, 206, 0.50);
 }
 .bubble:after {
   content: '';
@@ -76,7 +78,7 @@ body {
 }
 .bubble span.message {
   opacity: 0;
-  color: #ffffff;
+  /* color: #ffffff; ini warna untuk dark mode*/
 }
 .bubble a {
   color: #1b80ea;
@@ -89,5 +91,6 @@ body {
 }
 .bubble .loading b {
   display: inline-block;
-  color: #888889;
+  /* color: #888889; ini warna untuk dark mode*/
+  color: rgba(0, 0, 0, .5);
 }
