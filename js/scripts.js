@@ -38,7 +38,7 @@ window.onload = function () {
     'I am a second year CS student',
     'I love designing UI',
     'If you have something to discuss, <br>you can contact me at <a href="mailto:ikhwanpramuditha05@gmail.com">ikhwanpramuditha05@gmail.com</a>',
-    '<a target="_blank" href="https://www.linkedin.com/in/ikhwanpramuditha/">linkedin.com/in/ikhwanpramuditha</a><br><a target="_blank" href="https://twitter.com/ikhwnpramuditha">twitter.com/ikhwnpramuditha</a><br><a target="_blank" href="https://github.com/prammmoe">github.com/prammmoe</a><br><a target="_blank" href="https://dribbble.com/prammmoe">dribbble.com/prammmoe</a>',
+    '<a target="_blank" href="https://www.linkedin.com/in/ikhwanpramuditha/">linkedin.com/in/ikhwanpramuditha</a><br><a target="_blank" href="https://twitter.com/prammmoee">twitter.com/prammmoee</a><br><a target="_blank" href="https://github.com/prammmoe">github.com/prammmoe</a><br><a target="_blank" href="https://dribbble.com/prammmoe">dribbble.com/prammmoe</a>',
     getCurrentTime(),
     '👾',
   ];
